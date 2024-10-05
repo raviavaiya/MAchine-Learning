@@ -14,13 +14,17 @@ app=Flask(__name__)
 #     print("API called name",name)
 #     return "my name is "+str(name)
 
-details=[
-    {'name':'Ravi','address':'surat'}
-]
+# details=[
+#     {'name':'Ravi','address':'surat'}
+# ]
 
-@app.route('/person', methods=['GET'])
-def get_person():
-    return jsonify(details)
+# @app.route('/person', methods=['GET'])
+# def get_person():
+#     return jsonify(details)
+
+@app.route('/Number',methods=['GET'])
+def get_number():
+    return jsonify({'number': 10})
 
 if __name__ == "__main__":
     app.run(debug=True)
