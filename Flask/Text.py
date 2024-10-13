@@ -1,5 +1,5 @@
 import logging
-logging.basicConfig(filename='api_logs.txt',level=logging.INFO)
+logging.basicConfig(filename='api_logs.log',level=logging.INFO)
 
 
 logging.info('API REQUEST RECEIVED...')
